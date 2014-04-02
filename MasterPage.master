@@ -20,8 +20,9 @@
                 Easy Trade Pre-owned Car</h1>
             </div>
         <div id="menu">
-            <asp:Menu ID="Menu1" runat="server">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" orientation="Horizontal" StaticSubMenuIndent="16px">
             </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" showstartingnode="False" />
             </div>
         <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
