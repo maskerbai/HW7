@@ -8,7 +8,7 @@
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" type="text/css" href="./css/masterpage.css" />
+    <link rel="stylesheet" type="text/css" href=".masterpage.css" />
 
 </head>
 <body>
