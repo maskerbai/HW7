@@ -11,6 +11,7 @@
     <p>
         With comprehensive pricing information, dealer reviews, side-by-side comparison tools, photo galleries, videos, unbiased editorial content and a large selection of new- and used-car inventory, Cars.com puts car buyers in control of their shopping process with the information they need to make confident buying decisions.</p>
     
+    <img src="image/cars.jpg" alt="Sample Photo" style="height: 441px; width: 797px" />
        
 </asp:Content>
 

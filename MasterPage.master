@@ -8,7 +8,11 @@
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" type="text/css" href=".masterpage.css" />
+    <link rel="stylesheet" type="text/css" href="masterpage.css" />
+
+    <style type="text/css">
+   
+    </style>
 
 </head>
 <body>
@@ -17,10 +21,11 @@
 
         <div id="header">
             <h1 style="text-align:center; font:bold 20px arial, verdana;"> 
-                Easy Trade Pre-owned Car</h1>
+                Easy Trade Pre-owned Car
+            </h1>
+            <div id="loginstatus"><asp:LoginStatus ID="LoginStatus1" runat="server"/></div>
             </div>
         <div id="menu">
-            <asp:LoginStatus ID="LoginStatus1" runat="server" />
             <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" orientation="Horizontal" StaticSubMenuIndent="16px">
             </asp:Menu>
             

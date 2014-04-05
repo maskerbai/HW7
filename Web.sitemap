@@ -4,8 +4,11 @@
         
         <siteMapNode url="~/default.aspx" title="Home"  description="" />
       
-      <siteMapNode url="~/customer/carlist.aspx" title="Cars"  description="" />
-      <siteMapNode url="~/contactus.aspx" title="Contact us"  description="" />
-      <siteMapNode url="~/login/login.aspx" title="Log in"  description="" />
+      <siteMapNode url="~/carlist.aspx" title="Cars"  description="" />
+      <siteMapNode url="~/contactform.aspx" title="Contact us"  description="" />
+      <siteMapNode url="~/sales/carlist.aspx" title="Salesman"  description="" />
+      <siteMapNode url="~/admin/saleslist.aspx" title="Admin"  description="" />
+      <siteMapNode url="~/about.aspx" title="About"  description="" />
+     
     </siteMapNode>
 </siteMap>
