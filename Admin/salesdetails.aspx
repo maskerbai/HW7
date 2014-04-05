@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="salesdetails.aspx.vb" Inherits="Admin_salesdetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>Salesman Details</title>
+    <link rel="stylesheet" type="text/css" href="masterpage.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="salesID" DataSourceID="SqlDataSource1" Height="50px" Width="242px">
+    <asp:DetailsView ID="DetailsView2" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="salesID" DataSourceID="SqlDataSource1" Height="50px" Width="250px" style="margin:5px 0 10px 0; border:solid 1px #525252; border-collapse:collapse; text-align:left;">
         <Fields>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />

@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="carID" DataSourceID="SqlDataSource1" Height="50px" Width="241px">
+    <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="carID" DataSourceID="SqlDataSource1" Height="50px" Width="250px" style="margin:5px 0 10px 0; border:solid 1px #525252; border-collapse:collapse; text-align:left;">
         <Fields>
             <asp:BoundField DataField="carName" HeaderText="Car Name" SortExpression="carName" />
             <asp:BoundField DataField="carMaker" HeaderText="Maker" SortExpression="carMaker" />
@@ -15,7 +15,7 @@
             <asp:BoundField DataField="preOwner" HeaderText="Pre-Owner " SortExpression="preOwner" />
             <asp:BoundField DataField="transmission" HeaderText="Transmission" SortExpression="transmission" />
             <asp:BoundField DataField="bodyStyle" HeaderText="BodyStyle" SortExpression="bodyStyle" />
-            <asp:CommandField ButtonType="Button" InsertText="New Record" ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
         </Fields>
     </asp:DetailsView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cars %>" SelectCommand="SELECT * FROM [cars] WHERE ([carID] = @carID)" DeleteCommand="DELETE FROM [cars] WHERE [carID] = @carID" InsertCommand="INSERT INTO [cars] ([carName], [carColor], [carMaker], [carYear], [carMiles], [carPrize], [preOwner], [transmission], [bodyStyle], [description]) VALUES (@carName, @carColor, @carMaker, @carYear, @carMiles, @carPrize, @preOwner, @transmission, @bodyStyle, @description)" UpdateCommand="UPDATE [cars] SET [carName] = @carName, [carColor] = @carColor, [carMaker] = @carMaker, [carYear] = @carYear, [carMiles] = @carMiles, [carPrize] = @carPrize, [preOwner] = @preOwner, [transmission] = @transmission, [bodyStyle] = @bodyStyle, [description] = @description WHERE [carID] = @carID">

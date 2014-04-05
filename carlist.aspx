@@ -1,9 +1,17 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="carlist.aspx.vb" Inherits="carlist" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" type="text/css" href="masterpage.css" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="carID" DataSourceID="SqlDataSource1">
+    <p>
+        Search for a car by Name:  <asp:TextBox ID="tb_search" runat="server"></asp:TextBox>
+    </p>
+   
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="carID" DataSourceID="SqlDataSource1" 
+        style="width:100%; margin:5px 0 10px 0; border:solid 1px #525252; border-collapse:collapse; text-align:center;">
+        
         <Columns>
             <asp:BoundField DataField="carName" HeaderText="Car Name" SortExpression="carName" />
             <asp:BoundField DataField="carMaker" HeaderText="Maker" SortExpression="carMaker" />
@@ -13,7 +21,10 @@
             <asp:BoundField DataField="carPrize" HeaderText="Prize" SortExpression="carPrize" />
             <asp:HyperLinkField DataNavigateUrlFields="carID" DataNavigateUrlFormatString="cardetails.aspx?carID={0}" HeaderText="View Details" Text="Details" />
         </Columns>
+        <HeaderStyle BackColor="#999999" />
+        <SelectedRowStyle BackColor="#99FF33" ForeColor="#99FF99" />
     </asp:GridView>
+     
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cars %>" SelectCommand="SELECT * FROM [cars]"></asp:SqlDataSource>
 </asp:Content>
 

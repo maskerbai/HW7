@@ -1,13 +1,49 @@
-﻿body {
+﻿body {font-family: Verdana, Geneva, sans-serif;
 }
 
 #loginstatus {
     float:right;
 }
-#container {background: #D2B48C;
+#container {background: #C2C2C2;
                width:900px;
              padding: 20px;
     margin: 0 auto;
     border: 1px solid black;
     width: 800px;
 }
+#contact {
+    margin-top: 10px;
+    margin-left: 265px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    border: 2px solid white;
+}
+
+
+
+#GridView1 td { padding:10px; border:solid 1px #c1c1c1; color:#717171; }
+
+#GridView1 td a, a:visited { color:#717171; text-decoration:none; }
+
+
+#GridView1 th { padding:10px; color:#fff; background:#424242 url(./image/grd_head.png) repeat-x top; border-left:solid 1px #525252; font-size:0.9em; }  
+
+#GridView1 th a { color:silver; text-decoration:none; }  
+
+#GridView1 th a:hover { color:white; background-color:#7C6F57; text-decoration:underline; }
+
+
+#GridView1 .alt { background: #fcfcfc url(./image/grd_alt.png) repeat-x top;}
+
+
+#gridview1 .pgr { background: #424242 url(./image/grd_pgr.png) repeat-x top; }  
+
+#gridview1 .pgr table { margin: 5px 0; }  
+
+#gridview1 .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }     
+
+#gridview1 .pgr a { color: #666; text-decoration: none; }  
+
+#gridview1 .pgr a:hover { color: #000; text-decoration: underline; }

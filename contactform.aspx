@@ -1,8 +1,11 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="contactform.aspx.vb" Inherits="contactUs" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="contactform.aspx.vb" Inherits="contactform" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="masterpage.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
     <form id="form1" >
         <div id="contact">
 

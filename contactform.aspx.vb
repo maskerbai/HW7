@@ -1,5 +1,7 @@
-﻿
-Partial Class contactUs
+﻿Imports System.Net.Mail
+Imports System.Net
+
+Partial Class contactform
     Inherits System.Web.UI.Page
 
     Protected Sub sendMail_Click(sender As Object, e As EventArgs) Handles sendMail.Click
@@ -8,7 +10,7 @@ Partial Class contactUs
         Dim client As New SmtpClient
 
         msg.To.Add("michael-colbert@uiowa.edu")  'destination email address
-        msg.From = senderAddress.Text  'get the address from the textbox
+        msg.From = New MailAddress(senderAddress.Text)  'get the address from the textbox
         msg.Subject = "web contact form test"  'set the message subject line
         msg.Body = senderMessage.Text  'get the message body from the textbox
 
